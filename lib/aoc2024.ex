@@ -4,17 +4,8 @@ defmodule Aoc2024 do
 
   Entry point for puzzles from Advent of Code 2024.
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Aoc2024.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def day1_answers do
+    IO.puts(Day1.day1_part1("in/day1.in"))
+    IO.puts(Day1.day1_part2("in/day1.in"))
   end
 end
