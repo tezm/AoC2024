@@ -30,12 +30,11 @@ defmodule Day1 do
     [Enum.sort(list1), Enum.sort(list2)]
     |> Enum.zip_with(fn [x, y] -> abs(x - y) end)
     |> Enum.sum()
-    |> Integer.to_string()
   end
 
   def day1_part2(file_path) do
     {list1, list2} = get_input(file_path)
     occ = count_occ(list2)
-    list1 |> Enum.map(fn x -> (occ[x] || 0) * x end) |> Enum.sum()
+    Enum.map(list1, fn x -> (occ[x] || 0) * x end) |> Enum.sum()
   end
 end
