@@ -1,4 +1,4 @@
-defmodule Day1 do
+defmodule Aoc2024.Day1 do
   @spliter ~r{\s}
   def read_word_by_word(file_path) do
     File.read!(file_path)

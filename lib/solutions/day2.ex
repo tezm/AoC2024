@@ -1,4 +1,4 @@
-defmodule Day2 do
+defmodule Aoc2024.Day2 do
   @line_spliter "\n"
   @word_spliter " "
   def read_input(path) do
